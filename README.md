@@ -61,22 +61,22 @@ you will be able to access the corresponding data through the following array:
 
 
 ## example
+```c
+#include "mnist.h"
 
-	#include "mnist.h"
+int main(void)
+{
+	load_mnist();
 
-	int main(void)
-	{
-		load_mnist();
+	printf("%d", test_label[0]);
+	// output : 7
 
-		printf("%d", test_label[0]);
-		// output : 7
+	save_mnist_pgm(test_image, 0);
 
-		save_mnist_pgm(test_image, 0);
+	print_mnist_pixel(test_image, NUM_TEST);
+	print_mnist_label(test_label, NUM_TEST);
 
-		print_mnist_pixel(test_image, NUM_TEST);
-		print_mnist_label(test_label, NUM_TEST);
-
-		return 0;
-	}
-
+	return 0;
+}
+```
 to see an actual runnig code, compile and run `example.c`
