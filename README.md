@@ -76,3 +76,5 @@ you will be able to access the corresponding data through the following array:
 		
 		return 0;
 	}
+
+to see an actual runnig code, compile and run `example.c`
