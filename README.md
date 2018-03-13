@@ -45,14 +45,17 @@ you will be able to access the corresponding data through the following array:
 	load mnist data to respective array (as mentioned above)  
 
 - void **print_mnist_pixel (** double data_image[][], int num_data **)**  
+	print pixel values of all mnist images to stdout  
 	data_image[][]: `train_image` or `test_image`  
 	num_data: `NUM_TRAIN` or `NUM_TEST`  
 
 - void **print_mnist_label (** double data_label[][], int num_data **)**  
+	print label of all mnist data to stdout  
 	data_label[][]: `train_image` or `test_image`  
 	num_data: `NUM_TRAIN` or `NUM_TEST`  
 
 - void **save_mnist_pgm (** double data_image[][SIZE], int index **)**  
+	save mnist image as pgm file  
 	data_image[][]: `train_image` or `test_image`  
 	index: index of data to save (`0~59999` for train image, `0~9999` for test image)  
 
