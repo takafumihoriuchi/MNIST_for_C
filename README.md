@@ -1,2 +1,2 @@
-# MNIST_for_C
-MNIST dataset loader for C
+# MNIST for C
+This repository contains a header file for loading MNIST dataset in C language.
