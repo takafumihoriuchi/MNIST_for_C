@@ -46,4 +46,20 @@ you will be able to access the corresponding data through the following array:
 - print_mnist_label()
 - save_mnist_pgm()
 
-See `example.c` for example on the usage of each function.
+
+## example
+
+	#include "mnist.h"
+		
+	int main(void)
+	{
+		load_mnist();
+		
+		print_mnist_pixel(test_image, NUM_TEST);
+		
+		print_mnist_label(test_label, NUM_TEST);
+		
+		save_mnist_pgm(train_image, 0);
+		
+		return 0;
+	}
