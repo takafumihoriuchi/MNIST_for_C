@@ -19,10 +19,14 @@ This repository contains a header file for loading MNIST dataset in C language.
 
 3. in `mnist.h`, set the appropriate data path to the following macros
 
-	- `#define TRAIN_IMAGE (ex: "./data/train-images.idx3-ubyte")`
-	- `#define TRAIN_LABEL (ex: "./data/train-labels.idx1-ubyte")`
-	- `#define TEST_IMAGE  (ex: "./data/t10k-images.idx3-ubyte")`
-	- `#define TEST_LABEL  (ex: "./data/t10k-labels.idx1-ubyte")`
+	- ```c
+	#define TRAIN_IMAGE (ex: "./data/train-images.idx3-ubyte")```
+	- ```c
+	#define TRAIN_LABEL (ex: "./data/train-labels.idx1-ubyte")```
+	- ```c
+	#define TEST_IMAGE  (ex: "./data/t10k-images.idx3-ubyte")```
+	- ```c
+	#define TEST_LABEL  (ex: "./data/t10k-labels.idx1-ubyte")```
 
 4. add `#include "mnist.h"` in your C code
 
