@@ -67,13 +67,15 @@ you will be able to access the corresponding data through the following array:
 	int main(void)
 	{
 		load_mnist();
-		
-		print_mnist_pixel(test_image, NUM_TEST);
-		
-		print_mnist_label(test_label, NUM_TEST);
-		
+
+		printf("%d", test_label[0]);
+		// output : 7
+
 		save_mnist_pgm(test_image, 0);
-		
+
+		print_mnist_pixel(test_image, NUM_TEST);
+		print_mnist_label(test_label, NUM_TEST);
+
 		return 0;
 	}
 

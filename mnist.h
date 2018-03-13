@@ -188,7 +188,7 @@ void save_mnist_pgm(double data_image[][SIZE], int index)
 
     for (y=0; y<height[n]; y++) {
         for (x=0; x<width[n]; x++) {
-            image[n][x][y] = train_image[index][y * width[n] + x] * 255.0;
+            image[n][x][y] = data_image[index][y * width[n] + x] * 255.0;
         }
     }
 
