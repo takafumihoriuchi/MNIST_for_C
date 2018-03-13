@@ -41,16 +41,26 @@ you will be able to access the corresponding data through the following array:
 
 ## functions
 
-- load_mnist()
-- print_mnist_pixel()
-- print_mnist_label()
-- save_mnist_pgm()
+- void **load_mnist(**void**)**
+	load mnist data to respective array (as mentioned above)
+
+- void **print_mnist_pixel(**double data_image[][], int num_data**)**
+	data_image[][]: `train_image` or `test_image`
+	num_data: `NUM_TRAIN` or `NUM_TEST`
+
+- void **print_mnist_label(**double data_label[][], int num_data**)**
+	data_label[][]: `train_image` or `test_image`
+	num_data: `NUM_TRAIN` or `NUM_TEST`
+
+- void **save_mnist_pgm(**double data_image[][SIZE], int index**)**
+	data_image[][]: `train_image` or `test_image`
+	index: index of data to save (`0~59999` for train image, `0~9999` for test image)
 
 
 ## example
 
 	#include "mnist.h"
-		
+
 	int main(void)
 	{
 		load_mnist();
@@ -59,7 +69,7 @@ you will be able to access the corresponding data through the following array:
 		
 		print_mnist_label(test_label, NUM_TEST);
 		
-		save_mnist_pgm(train_image, 0);
+		save_mnist_pgm(test_image, 0);
 		
 		return 0;
 	}
