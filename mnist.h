@@ -1,3 +1,8 @@
+/*
+Takafumi Hoiruchi. 2018.
+https://github.com/takafumihoriuchi/MNIST_for_C
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -18,10 +23,8 @@
 
 #define MAX_IMAGESIZE 1280
 #define MAX_BRIGHTNESS 255
-#define GRAYLEVEL 256
 #define MAX_FILENAME 256
-#define MAX_BUFFERSIZE 256
-#define MAX_NUM_OF_IMAGES 5
+#define MAX_NUM_OF_IMAGES 1
 
 unsigned char image[MAX_NUM_OF_IMAGES][MAX_IMAGESIZE][MAX_IMAGESIZE];
 int width[MAX_NUM_OF_IMAGES], height[MAX_NUM_OF_IMAGES];
@@ -191,9 +194,3 @@ void save_mnist_pgm(double data_image[][SIZE], int index)
 
     save_image(n, "");
 }
-
-
-/*  
-MNIST Data file from http://yann.lecun.com/exdb/mnist/
-2006.10.25 A.Date 
-*/
