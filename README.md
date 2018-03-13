@@ -7,10 +7,10 @@ This repository contains a header file for loading MNIST dataset in C language.
 
 1. download the following data files
 
-	- train image: `train-images.idx3-ubyte`
-	- train label: `train-labels.idx1-ubyte`
-	- test image: `t10k-images.idx3-ubyte`
-	- test label: `t10k-labels.idx1-ubyte`
+	- train image :	`train-images.idx3-ubyte`
+	- train label :	`train-labels.idx1-ubyte`
+	- test image :	`t10k-images.idx3-ubyte`
+	- test label :	`t10k-labels.idx1-ubyte`  
 	you can find these files inside `/data` directory in this repository
 	they are also available at http://yann.lecun.com/exdb/mnist/
 
