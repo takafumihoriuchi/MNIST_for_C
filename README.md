@@ -29,7 +29,9 @@ This repository contains a header file for loading MNIST dataset in C language.
 
 ## usage
 
-After calling `load_mnist();` (which is a *void* function), you will be able to access the corresponding data through the following array:
+after calling the following *void* function,  
+`load_mnist();`  
+you will be able to access the corresponding data through the following array:
 
 	train image : train_image[60000][784] (type: double, normalized, flattened)
 	train label : train_label[60000]      (type: int)
